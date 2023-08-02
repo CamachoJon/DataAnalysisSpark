@@ -25,7 +25,7 @@ submit_job: build_dist copy_dist # https://cloud.google.com/sdk/gcloud/reference
 	-- \
 	--job=${JOB_NAME} \
 	--job-args=gcs_input_path=gs://${BUCKET_NAME}/data/NYC \
-	--job-args=gcs_output_path=gs://${BUCKET_NAME}/results
+	--job-args=gcs_output_path=gs://${BUCKET_NAME}/results/${JOB_NAME}
 
 
 create_bucket:
