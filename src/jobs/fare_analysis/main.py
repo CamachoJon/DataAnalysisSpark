@@ -41,7 +41,6 @@ def analyze(spark, format="parquet", gcs_input_path=None, gcs_output_path=None):
     correlation = df_enriched.stat.corr("fare_amount", "trip_distance")
 
     # Convert the correlation to an RDD and save it as a text file
-    spark.sparkContext.parallelize([correlation]).format("txt").saveAsTextFile(f"{gcs_output_path}/correlation_between_fare_and_distance")
-
+    spark.sparkContext.parallelize([correlation]).saveAsTextFile(f"{gcs_output_path}/correlation_between_fare_and_distance")
 
     spark.stop()

@@ -1,0 +1,1 @@
+from jobs.prediction.main import analyze
