@@ -1,6 +1,6 @@
 # Taxi Trips Analysis with PySpark
 
-* Please find the report of our analysis in the DataAnalysis.ipynb.
+Please find the report of our analysis in the _[DataAnalysis.ipynb]_(https://github.com/CamachoJon/DataAnalysisSpark/blob/main/DataAnalysis.ipynb) file.
   
 This README file provides a comprehensive description of a set of PySpark scripts used for analyzing taxi trips data. Each script corresponds to a specific job that provides insights into different characteristics of these trips.
 
